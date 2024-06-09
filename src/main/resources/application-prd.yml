@@ -7,4 +7,3 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: create #validate//
-  #- PROD
