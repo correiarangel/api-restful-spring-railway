@@ -27,7 +27,12 @@ dependencies {
   
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
-
+// build Railway
+tasks.jar {
+	manifest {
+		attributes["Main-Class"] = "br.com.rangeldev.api_restful_spring_railway.Application"
+	}
+}
 tasks.named('test') {
 	useJUnitPlatform()
 }
